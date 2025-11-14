@@ -4,6 +4,6 @@ resource "aws_instance" "MyFirstInstance" {
     instance_type = "t3.micro"
 
     tags = {
-        Name = "threedemoinstance"
+        Name = "demoinstance=${count.index + 1}"
     }
 }
